@@ -8,7 +8,8 @@ const RecipeSchema = mongoose.Schema({
     content : { 
         type: String, 
         required: true
-    }
+    },
+    tags: []
 })
 
 const Recipe = mongoose.model("Recipe", RecipeSchema);

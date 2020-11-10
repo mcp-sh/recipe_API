@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const db = mongoose.connect(
-    `mongodb+srv://${process.env.DBUSER}:${process.env.DBPWD}@cluster0.dtydl.mongodb.net/<dbname>?retryWrites=true&w=majority`, 
+    `mongodb+srv://${process.env.DBUSER}:${process.env.DBPWD}@cluster0.dtydl.mongodb.net/recipeDB?retryWrites=true&w=majority`, 
     {
         useNewUrlParser: true, 
         useUnifiedTopology: true
