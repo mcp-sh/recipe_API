@@ -26,20 +26,4 @@ router.post("/", async (req, res) => {
     }
 })
 
-router.post("/test", async (req, res) => {
-    const recipe = new Recipe({
-        title: req.body.title, 
-        content: req.body.content,
-        tags: req.body.tags
-    })
-    console.log(recipe);
-    res.json(recipe);
-    // try {
-    //     const savedRecipe = await recipe.save();
-    //     res.json(savedRecipe);
-    // } catch(err) {
-    //     res.json({message: err});
-    // }
-})
-
 module.exports = router
